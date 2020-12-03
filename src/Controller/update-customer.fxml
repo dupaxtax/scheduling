@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateCustomerController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Text fx:id="cId" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID:" GridPane.halignment="CENTER" />
+      <TextField fx:id="id" disable="true" GridPane.columnIndex="1" />
+      <Text fx:id="cName" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="name" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Text fx:id="address" strokeType="OUTSIDE" strokeWidth="0.0" text="Street Address:" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <TextField fx:id="street" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Text fx:id="address2" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Address:" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <TextField fx:id="street2" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <Text fx:id="cityText" strokeType="OUTSIDE" strokeWidth="0.0" text="City:" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="city" maxWidth="150.0" minWidth="150.0" prefHeight="27.0" prefWidth="150.0" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Text fx:id="zipText" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="zip" maxWidth="100.0" prefHeight="27.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Text fx:id="countryText" strokeType="OUTSIDE" strokeWidth="0.0" text="Country:" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="country" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Text fx:id="phoneNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="phone" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Button fx:id="save" mnemonicParsing="false" onAction="#saveFields" text="Save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+   </children>
+</GridPane>
